@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useContext, useEffect, useRef, useState } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { config } from '../Config/config';
 import UserContext from '../UserContext/UserContext';
 import RepositoryCard from './RepositoryCard'

@@ -1,6 +1,5 @@
 import axios from 'axios';
 import React, { useContext, useEffect } from 'react'
-import { isNonNullChain } from 'typescript';
 import { config } from '../Config/config';
 import UserContext from '../UserContext/UserContext';
 import DeveloperCard from './DeveloperCard'
@@ -18,7 +17,6 @@ function Developers() {
         } catch (error) {
             console.log(error);
         }
-
     }
     return (
         <div >
