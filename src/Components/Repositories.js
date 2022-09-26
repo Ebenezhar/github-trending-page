@@ -13,15 +13,12 @@ function Repositories() {
     let fetchData = async () => {
         try {
             userData = await axios.get(`${config.api}/repositories`);
-
             userContextData.setRepository(userData.data);
-
-
         } catch (error) {
             console.log(error);
         }
-
     }
+
     return (
         <div>
             {

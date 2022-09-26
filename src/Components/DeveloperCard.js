@@ -18,7 +18,7 @@ function DeveloperCard({ data }) {
                 </div>
             </div>
             <div className='w-2/6'>
-                <p className='text-gray-400 mb-0 text-lg'><i class="fa-solid fa-fire-flame-curved text-amber-600"></i> POPULAR REPO</p>
+                <p className='text-gray-400 mb-0 text-lg'><i className="fa-solid fa-fire-flame-curved text-amber-600"></i> POPULAR REPO</p>
                 {data.popularRepository.repositoryName ? <p><i className="fa-regular fa-file text-lg  "></i> <a className='no-underline font-bold px-1' href={`${data.popularRepository.url}`}>{data.popularRepository.repositoryName}</a></p> : null}
                 {data.popularRepository.description ? <p className='text-gray-400'>{data.popularRepository.description}</p> : null}
 
